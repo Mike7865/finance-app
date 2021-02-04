@@ -4,7 +4,6 @@ import { GlobalContext } from '../Context/ClobalState';
 function moneyFormatter(num) {
   let p = num.toFixed(2).split('.');
   return (
-    '$ ' +
     p[0]
       .split('')
       .reverse()
@@ -12,7 +11,7 @@ function moneyFormatter(num) {
         return num === '-' ? acc : num + (i && !(i % 3) ? ',' : '') + acc;
       }, '') +
     '.' +
-    p[1]
+    p[1] + ' c.u' 
   );
 }
 

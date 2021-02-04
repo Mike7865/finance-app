@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import '../../Converters/ConverterStyles.css';
+import Paper from '@material-ui/core/Paper';
+import '../../Converter/ConverterStyles.css';
 import CurrencyRow from './CurrencyRow/CurrencyRow';
 
 const BASE_URL = "https://api.exchangeratesapi.io/latest";
 
 function CurrencyConverter() {
-  const useStyles = makeStyles({
+  const useStyles = makeStyles((theme) => ({
     root: {
-      minWidth: 275,
-      minHeight: 150,
-    },
-  });
+      display: 'flex',
+      flexDirection: 'column',
+    }, 
+  }));
 
   const classes = useStyles();
 
@@ -66,24 +66,26 @@ function CurrencyConverter() {
 
   return (
     <div>
-      <Card className={classes.root} variant="outlined">
+      <Paper className={classes.root} elevation={3} >
         <h1>Currencies</h1>
-        <CurrencyRow 
-          currencyOptions={currencyOptions}
-          selectedCurrency={fromCurrency}
-          onChangeCurrency={e => setFromCurrency(e.target.value)}
-          onChangeAmount={handleFromAmountChange}
-          amount={fromAmount}
-        />
-        <div className="equals">=</div>
-        <CurrencyRow 
-          currencyOptions={currencyOptions}
-          selectedCurrency={toCurrency}
-          onChangeCurrency={e => setToCurrency(e.target.value)}
-          onChangeAmount={handleToAmountChange}
-          amount={toAmount}
-        />
-      </Card>
+        <div className="currencyRows">
+          <CurrencyRow 
+            currencyOptions={currencyOptions}
+            selectedCurrency={fromCurrency}
+            onChangeCurrency={e => setFromCurrency(e.target.value)}
+            onChangeAmount={handleFromAmountChange}
+            amount={fromAmount}
+          />
+          <div className="equals">=</div>
+          <CurrencyRow 
+            currencyOptions={currencyOptions}
+            selectedCurrency={toCurrency}
+            onChangeCurrency={e => setToCurrency(e.target.value)}
+            onChangeAmount={handleToAmountChange}
+            amount={toAmount}
+          />
+        </div>
+      </Paper>
     </div>
   );
 }

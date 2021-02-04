@@ -1,19 +1,19 @@
 import React from 'react'
 
-export default function CryptoRow(props) {
+export default function CurrencyRow(props) {
   const {
-    cryptoOptions,
-    selectedCrypto,
-    onChangeCrypto,
+    currencyOptions,
+    selectedCurrency,
+    onChangeCurrency,
     onChangeAmount,
     amount
   } = props
 
   return (
-    <div>
+    <div className="currencyRow" >
       <input type="number" className="input" value={amount} onChange={onChangeAmount} />
-      <select value={selectedCrypto} onChange={onChangeCrypto}>
-        {cryptoOptions.map(option => (
+      <select value={selectedCurrency} onChange={onChangeCurrency}>
+        {currencyOptions.map(option => (
           <option key={option} value={option}>{option}</option>
         ))}
       </select>

@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css';
 import Navbar from './Navbar/Navbar';
 import { Route } from 'react-router-dom';
-import Converters from './Converters/Converters';
+import Converter from './Converter/Converter';
 import ExpenceTracker from './ExpenceTracker/ExpenceTracker';
 
 function App (props) {
@@ -10,7 +10,7 @@ function App (props) {
     <div className="app-wrapper">
       <Navbar />
       <div className="app-content">
-        <Route path="/converters" render={ () => <Converters />}/>
+        <Route path="/converter" render={ () => <Converter />}/>
         <Route path="/expencetracker" render={ () => <ExpenceTracker />}/>
       </div>
     </div>

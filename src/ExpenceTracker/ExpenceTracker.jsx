@@ -1,5 +1,6 @@
 import React from 'react';
-import { Header } from './Components/Header';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
 import { Balance } from './Components/Balance';
 import { IncomeExpenses } from './Components/IncomeExpences';
 import { TransactionList } from './Components/TransactionList';
@@ -10,16 +11,28 @@ import { GlobalProvider } from './Context/ClobalState';
 import './Tracker.css';
 
 function ExpenceTracker() {
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      display: 'flex',
+      flexDirection: 'column',
+      width: 330,
+      margin: 30,
+    }, 
+  }));
+
+  const classes = useStyles();
+
   return (
     <GlobalProvider>
       <div className="tracker-container">
-        <Header />
-        <div className="container">
+        <Paper className={classes.root} elevation={3} >
           <Balance />
           <IncomeExpenses />
-          <TransactionList />
           <AddTransaction />
-        </div>
+        </Paper>
+        <Paper className={classes.root} elevation={3} >
+          <TransactionList />
+        </Paper>
       </div>
     </GlobalProvider>
   );
