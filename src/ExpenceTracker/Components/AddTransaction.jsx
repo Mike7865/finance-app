@@ -1,5 +1,7 @@
 import React, {useState, useContext} from 'react'
 import { GlobalContext } from '../Context/ClobalState';
+import { TransactionList } from './TransactionList';
+
 
 export const AddTransaction = () => {
   const [text, setText] = useState('');
@@ -18,6 +20,20 @@ export const AddTransaction = () => {
 
     addTransaction(newTransaction);
   }
+
+  let btn = document.getElementById("btn");
+
+  let transActions = TransactionList.transactions;
+
+  let blockSubmit = function () {
+    transActions.toString();
+    if (TransactionList.transactions.length > 9) {
+      return btn.disabled;
+    }
+  };
+  
+
+  blockSubmit();
 
   return (
     <>
