@@ -2,7 +2,7 @@ import React, { createContext, useReducer } from 'react';
 import TrackerReducer from './TrackerReducer';
 
 // Initial state
-const initialState = {
+export const initialState = {
   transactions: []
 }
 
