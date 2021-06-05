@@ -1,0 +1,14 @@
+.budgetSum {
+  background-color: #e2e3e5;
+  color: #1a1a1c;
+}
+
+.remainingSum {
+  background-color: #d1e7dd;
+  color: #1a1a1c;
+}
+
+.spentSum {
+  background-color: #cfe2ff;
+  color: #1a1a1c;
+}

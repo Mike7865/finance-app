@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  background: rgb(159, 129, 209);
+  height: 100vh;
+}
+
+.navItems {
+  margin-top: 60px;
+  margin-left: 10px;
+  background: rgb(159, 129, 209);
+}
+
+.navItem {
+  margin-top: 10px;
+  background: rgb(159, 129, 209);
+}
+
+.navItemLink {
+  text-decoration: none;
+  background: rgb(159, 129, 209);
+  color: #fff;
+}
+
+.itemLinkActive {
+  color: rgb(255, 251, 4);
+}
