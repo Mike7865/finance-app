@@ -11,9 +11,9 @@ const Navbar = () => {
       <div className="navItem">
         <NavLink to="/cryptocurrencytracker" className="navItemLink" activeClassName="itemLinkActive">Cryptocurrency Tracker</NavLink>
       </div>
-      {/* <div className="navItem">
+      <div className="navItem">
         <NavLink to="/currencytracker" className="navItemLink" activeClassName="itemLinkActive">Currency Tracker</NavLink>
-      </div> */}
+      </div>  
     </div>
   </nav>
 }

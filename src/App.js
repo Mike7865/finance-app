@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './Navbar';
 import BudgetTracker from './BudgetTracker';
 import CryptoCurrencyTracker from './CryptoCurrencyTracker';
-// import CurrencyTracker from './CurrencyTracker';
+import CurrencyTracker from './CurrencyTracker';
 
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
       <div className="app-wrapper-content">
         <Route path="/budgettracker" render={ () => <BudgetTracker />}/>
         <Route path="/cryptocurrencytracker" render={ () => <CryptoCurrencyTracker />}/>
-        {/* <Route path="/cryptocurrencytracker" render={ () => <CurrencyTracker />}/> */}
+        <Route path="/currencytracker" render={ () => <CurrencyTracker />}/>  
       </div>
     </div>
   );
