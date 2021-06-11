@@ -1,5 +1,5 @@
 import React from 'react';
-import './BudgetTracker.css';
+import '../BudgetTracker.css';
 
 const ViewBudget = (props) => {
 	return (

@@ -9,10 +9,10 @@ const Navbar = () => {
         <NavLink to="/budgettracker" className="navItemLink" activeClassName="itemLinkActive">Budget Tracker</NavLink>
       </div>
       <div className="navItem">
-        <NavLink to="/cryptocurrencytracker" className="navItemLink" activeClassName="itemLinkActive">Cryptocurrency Tracker</NavLink>
-      </div>
+        <NavLink to="/currencyconverter" className="navItemLink" activeClassName="itemLinkActive">Currency Converter</NavLink>
+      </div>  
       <div className="navItem">
-        <NavLink to="/currencytracker" className="navItemLink" activeClassName="itemLinkActive">Currency Tracker</NavLink>
+        <NavLink to="/cryptocurrencytracker" className="navItemLink" activeClassName="itemLinkActive">Cryptocurrency Tracker</NavLink>
       </div>  
     </div>
   </nav>

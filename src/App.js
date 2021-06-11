@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
-import Navbar from './Navbar';
-import BudgetTracker from './BudgetTracker';
-import CryptoCurrencyTracker from './CryptoCurrencyTracker';
-import CurrencyTracker from './CurrencyTracker';
+import Navbar from './NavbarFiles/Navbar';
+import BudgetTracker from './BudgetTrackerFiles/BudgetTracker';
+import CurrencyConverter from './CurrencyConverterFiles/CurrencyConverter';
+import CryptoCurrencyTracker from './CryptoTrackerFiles/CryptoCurrencyTracker';
 
 
 const App = () => {
@@ -13,8 +13,8 @@ const App = () => {
       <Navbar />
       <div className="app-wrapper-content">
         <Route path="/budgettracker" render={ () => <BudgetTracker />}/>
+        <Route path="/currencyconverter" render={ () => <CurrencyConverter />}/>
         <Route path="/cryptocurrencytracker" render={ () => <CryptoCurrencyTracker />}/>
-        <Route path="/currencytracker" render={ () => <CurrencyTracker />}/>  
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AppProvider } from './Context/AppContext';
-import Budget from './BTComponents/Budget';
-import ExpenseTotal from './BTComponents/ExpenseTotal';
-import ExpenseList from './BTComponents/ExpenseList';
-import AddExpenseForm from './BTComponents/AddExpenseForm';
-import RemainingBudget from './BTComponents/Remaining';
+import Budget from '../BudgetTrackerFiles/BudgetTrackerComponents/Budget';
+import ExpenseTotal from '../BudgetTrackerFiles/BudgetTrackerComponents/ExpenseTotal';
+import ExpenseList from '../BudgetTrackerFiles/BudgetTrackerComponents/ExpenseList';
+import AddExpenseForm from '../BudgetTrackerFiles/BudgetTrackerComponents/AddExpenseForm';
+import RemainingBudget from '../BudgetTrackerFiles/BudgetTrackerComponents/Remaining';
 
 const BudgetTracker = () => {
 	return (

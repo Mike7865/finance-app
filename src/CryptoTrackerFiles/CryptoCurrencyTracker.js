@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './CryptoCurrencyTracker.css';
-import Coin from './CCTComponents/Coin';
+import Coin from './CryptoTrackerComponents/Coin';
 
 
 function CryptoCurrencyTracker() {

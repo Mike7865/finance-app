@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import './BudgetTracker.css';
+import '../BudgetTracker.css';
 import { AppContext } from '../Context/AppContext';
 import { v4 as uuidv4 } from 'uuid';
 
