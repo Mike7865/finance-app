@@ -63,9 +63,6 @@ const CurrencyConverter = () => {
     initCountry(b)
   }
 
-
-
-
   return (
     <Router>
       <div className="currencyConverter">

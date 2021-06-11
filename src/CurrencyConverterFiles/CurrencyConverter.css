@@ -5,7 +5,6 @@
 }
 
 .App-container {
-  /* background-image: linear-gradient(to top right, #13557d, #0e4a6e, #0a3f5f, #043552, #022b44);  */
   min-height: 100vh;
   display: flex;
   flex-direction: column;

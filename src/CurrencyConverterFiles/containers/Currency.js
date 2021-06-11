@@ -27,7 +27,6 @@ const currency = (props) => {
 
   let components = (
     <Fragment>
-
     {/* header */}
       <Header />
     {/* primary */}

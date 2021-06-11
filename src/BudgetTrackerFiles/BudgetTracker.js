@@ -7,6 +7,7 @@ import ExpenseList from '../BudgetTrackerFiles/BudgetTrackerComponents/ExpenseLi
 import AddExpenseForm from '../BudgetTrackerFiles/BudgetTrackerComponents/AddExpenseForm';
 import RemainingBudget from '../BudgetTrackerFiles/BudgetTrackerComponents/Remaining';
 
+
 const BudgetTracker = () => {
 	return (
 		<AppProvider>
