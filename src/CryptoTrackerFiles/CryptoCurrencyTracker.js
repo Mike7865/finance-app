@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './CryptoCurrencyTracker.css';
 import Coin from './CryptoTrackerComponents/Coin';
+import Spinner from './Spinner'
 
 
 function CryptoCurrencyTracker() {
@@ -41,7 +42,7 @@ function CryptoCurrencyTracker() {
           />
         </form>
       </div>
-      {filteredCoins.map(coin => {
+      {filteredCoins.length > 0 ? filteredCoins.map(coin => {
         return (
           <Coin
             key={coin.id}
@@ -54,7 +55,7 @@ function CryptoCurrencyTracker() {
             priceChange={coin.price_change_percentage_24h}
           />
         );
-      })}
+      }): <Spinner />}
     </div>
   );
 }
